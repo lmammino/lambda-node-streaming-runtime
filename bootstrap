@@ -1,0 +1,3 @@
+#!/bin/sh
+cd $LAMBDA_TASK_ROOT
+/var/lang/bin/node runtime.js
