@@ -6,7 +6,7 @@ const server = createServer(function (req, res) {
   console.log(`>> ${req.method} ${req.url}`)
   const url = new URL(req.url, 'http://localhost')
 
-  if (req.method === 'POST' && url.pathname === '/2018-06-01/runtime/invocation/next') {
+  if (req.method === 'GET' && url.pathname === '/2018-06-01/runtime/invocation/next') {
     res.writeHead(200, 'OK', {
       'Lambda-Runtime-Aws-Request-Id': (new Date()).getTime()
     })

@@ -35,7 +35,7 @@ async function getAndProcessEvent (handler) {
 
   // Get an event – Call the next invocation API to get the next event. The response body contains the event data. Response headers contain the request ID and other information.
   const req = await requestAsync({
-    method: 'POST',
+    method: 'GET',
     host,
     port,
     path: '/2018-06-01/runtime/invocation/next'
